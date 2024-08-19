@@ -1,0 +1,32 @@
+h1 {
+    color: red;
+}
+
+#etch-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    border: 15px solid black;
+}
+
+.grid-rows {
+    display: flex;  
+    flex-grow: 1;
+    margin: 0px;
+}
+
+.individual-grids {
+    flex-grow: 1;
+    margin: 0px;
+    background-color: coral;
+}
+
+.individual-grids:hover {
+    background-color: black;
+}
+
+.individual-grids-hover {
+    background-color: black;
+}
