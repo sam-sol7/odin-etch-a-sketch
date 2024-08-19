@@ -20,3 +20,13 @@ function createGrid(gridCount) {
         }
     }
 };
+
+function newGridRequest() {
+    let gridCount = prompt("Insert the number of squares per side for the new grid");
+    while (gridCount <= 0 || gridCount >= 100) {
+        gridCount = prompt("Please insert a number greater than 0 and less than 100"); 
+    }
+    createGrid(gridCount);
+}
+
+newGridButton.addEventListener("click", newGridRequest);
