@@ -15,7 +15,10 @@ function createGrid(gridCount) {
         for(let j = 0; j < gridCount; j++) {
             let newGrid = document.createElement("div");
             newGrid.classList.add("individual-grids");
-            newGrid.onmouseover = ("background-color", "black");
+            // newGrid.onmouseover = ("background-color", "black");
+            newGrid.addEventListener("mouseover",  (event) => {
+                newGrid.classList.add("individual-grids-hover");                
+            });
             newRow.appendChild(newGrid);
         }
     }
